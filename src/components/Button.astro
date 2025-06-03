@@ -9,8 +9,8 @@ interface ButtonProps {
 const { link, href = "#", type = "primary", children }: ButtonProps = Astro.props;
 
 const estilos = {
-  primary: "bg-[#109BFF] text-white cursor-pointer py-3 px-5 rounded-lg border-2 border-white/40",
-  secondary: "bg-transparent text-[#656565]/70 cursor-pointer py-3 px-5 rounded-lg border-2 border-[#656565]/30",
+  primary: "bg-[#109BFF] text-white cursor-pointer py-3 px-5 rounded-lg border-2 border-white/40 w-full",
+  secondary: "bg-transparent text-[#656565]/70 cursor-pointer py-3 px-5 rounded-lg border-2 border-[#656565]/30 w-full",
 }
 
 const clase = estilos[type] || estilos.primary;    
