@@ -2,11 +2,13 @@
 import "../styles/global.css";
 
 import Hero from '../components/Hero.astro';
-import Button from '../components/Button.astro';
 import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
 ---
 
 <Layout>
+	<div class="flex justify-center">
+		<Navbar />
+	</div>
 	<Hero />
-	
 </Layout>

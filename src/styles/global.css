@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Satoshi Medium';
+    src: url("../../public/fonts/Satoshi-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Satoshi Black';
+    src: url("../../public/fonts/Satoshi-Black.ttf");
+}
+
+@font-face {
+    font-family: 'DM Sans Medium';
+    src: url("../../public/fonts/DMSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'DM Sans Regular';
+    src: url("../../public/fonts/DMSans-Regular.ttf");
+}
+
+@theme {
+    --font-satoshi-medium: 'Satoshi Medium', sans-serif;
+    --font-satoshi-black: 'Satoshi Black', sans-serif;
+    --font-dm-sans-medium: 'DM Sans Medium', sans-serif;
+    --font-dm-sans-regular: 'DM Sans Regular', sans-serif;
+}
