@@ -1,0 +1,13 @@
+---
+import "../styles/global.css";
+
+import Welcome from '../components/Hero.astro';
+import Button from '../components/Button.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<Welcome />
+	<Button link="true" href="/docs" type="primary">Registrarme</Button>
+	<Button link="true" href="/docs" type="secondary">Más información</Button>
+</Layout>

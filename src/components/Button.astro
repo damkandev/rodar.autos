@@ -1,0 +1,28 @@
+---
+interface ButtonProps {
+  link?: boolean;
+  href?: string;
+  type?: "primary" | "secondary";
+  children?: any;
+}
+
+const { link, href = "#", type = "primary", children }: ButtonProps = Astro.props;
+
+const estilos = {
+  primary: "bg-[#109BFF] text-white cursor-pointer py-3 px-5 rounded-lg border-2 border-white/40",
+  secondary: "bg-transparent text-[#656565]/70 cursor-pointer py-3 px-5 rounded-lg border-2 border-[#656565]/30",
+}
+
+const clase = estilos[type] || estilos.primary;    
+---
+
+{link? (
+    <a href={href} class={clase}>
+        <slot />
+    </a>
+): (
+    <button class={clase}>
+        <slot />
+    </button>
+)
+}
