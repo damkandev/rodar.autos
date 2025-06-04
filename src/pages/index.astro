@@ -1,9 +1,19 @@
 ---
 import "../styles/global.css";
 
-import Hero from '../components/Hero.astro';
+
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+
+// Secciones del storytelling
+
+import HowWorks from "../components/story/HowWorks.astro";
+import Percentage from "../components/story/Percentage.astro";
+import Sell from "../components/story/Sell.astro";
+import Retorno from "../components/story/Retorno.astro";
+import RetornoDashboard from "../components/story/RetornoDashboard.astro";
+
 ---
 
 <Layout>
@@ -11,4 +21,12 @@ import Navbar from '../components/Navbar.astro';
 		<Navbar />
 	</div>
 	<Hero />
+
+	<!-- Story  -->
+	<HowWorks />
+	<Percentage />
+	<Sell />
+	<Retorno />
+	<RetornoDashboard />
+	
 </Layout>
