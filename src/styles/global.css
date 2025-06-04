@@ -6,6 +6,11 @@
 }
 
 @font-face {
+    font-family: 'Satoshi Bold';
+    src: url("../../public/fonts/Satoshi-Bold.ttf");
+}
+
+@font-face {
     font-family: 'Satoshi Black';
     src: url("../../public/fonts/Satoshi-Black.ttf");
 }
@@ -22,6 +27,7 @@
 
 @theme {
     --font-satoshi-medium: 'Satoshi Medium', sans-serif;
+    --font-satoshi-bold: 'Satoshi Bold', sans-serif;
     --font-satoshi-black: 'Satoshi Black', sans-serif;
     --font-dm-sans-medium: 'DM Sans Medium', sans-serif;
     --font-dm-sans-regular: 'DM Sans Regular', sans-serif;

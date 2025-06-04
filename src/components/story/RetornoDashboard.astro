@@ -1,4 +1,10 @@
-<div class="flex flex-col justify-center items-center h-screen mx-[8dvw]">
-    <img src="/images/retorno_dashboard.png" alt="Un vehiculo en NO tan mal estado" class="w-[100%] h-auto mt-4" />
-    <p class="font-dm-sans-medium text-xl mt-8 text-center text-black/70 tracking-[-1.2px]">Así es como lo verias tú</p>
+---
+import InversionPanel from "../ui/InversionPanel.astro"
+import InversionImagenesComparativas from "../ui/inversionImagenesComparativas.astro"
+--- 
+
+<div class="flex flex-col justify-center items-center w-full max-w-4xl mx-auto px-4">
+    <p class="font-dm-sans-medium text-xl mt-8 text-center text-black/70 tracking-[-1.2px] mb-4">Así es como lo verias tú</p>
+    <InversionPanel />
+    <InversionImagenesComparativas />
 </div>
