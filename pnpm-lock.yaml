@@ -11,6 +11,9 @@ importers:
       astro:
         specifier: ^5.9.3
         version: 5.9.3(@types/node@24.0.1)(rollup@4.43.0)(typescript@5.8.3)
+      astro-plyr:
+        specifier: ^1.1.0
+        version: 1.1.0(astro@5.9.3(@types/node@24.0.1)(rollup@4.43.0)(typescript@5.8.3))(plyr@3.7.8)
 
 packages:
 
@@ -515,6 +518,12 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
+  astro-plyr@1.1.0:
+    resolution: {integrity: sha512-R6d6eRV3vWmSq1NMYFDfU2PBM0Ryi5KENeYw6CcZr10jno7fEYITHsdr424pkoHtEtdLXkdYmkqBuqwOwYY7XQ==}
+    peerDependencies:
+      astro: '*'
+      plyr: ^3.7.8
+
   astro@5.9.3:
     resolution: {integrity: sha512-VReZrpUa/3rfeiVvsQ1A2M3ujDPI+pDGIYOMtXPEZwut8tZoEyealXXLjitgCsJ+3dunKGZbg4Eak6i+r0vniw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
@@ -610,6 +619,9 @@ packages:
     resolution: {integrity: sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA==}
     engines: {node: '>=18'}
 
+  core-js@3.43.0:
+    resolution: {integrity: sha512-N6wEbTTZSYOY2rYAn85CuvWWkCK6QweMn7/4Nr3w+gDBeBhk/x4EJeY6FPo4QzDoJZxVTv8U7CMvgWk6pOHHqA==}
+
   cross-fetch@3.2.0:
     resolution: {integrity: sha512-Q+xVJLoGOeIMXZmbUK4HYk+69cQH6LudR0Vu/pRm2YlU/hDV9CiS0gKUMaWY5f2NeUH9C1nV3bsTlCo0FsTV1Q==}
 
@@ -624,6 +636,9 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+
+  custom-event-polyfill@1.0.7:
+    resolution: {integrity: sha512-TDDkd5DkaZxZFM8p+1I3yAlvM3rSr1wbrOliG4yJiwinMZN8z/iGL7BTlDkrJcYTmgUSb4ywVCc3ZaUtOtC76w==}
 
   debug@4.4.1:
     resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
@@ -826,6 +841,9 @@ packages:
   kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
+
+  loadjs@4.3.0:
+    resolution: {integrity: sha512-vNX4ZZLJBeDEOBvdr2v/F+0aN5oMuPu7JTqrMwp+DtgK+AryOlpy6Xtm2/HpNr+azEa828oQjOtWsB6iDtSfSQ==}
 
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
@@ -1053,6 +1071,9 @@ packages:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
 
+  plyr@3.7.8:
+    resolution: {integrity: sha512-yG/EHDobwbB/uP+4Bm6eUpJ93f8xxHjjk2dYcD1Oqpe1EcuQl5tzzw9Oq+uVAzd2lkM11qZfydSiyIpiB8pgdA==}
+
   postcss@8.5.5:
     resolution: {integrity: sha512-d/jtm+rdNT8tpXuHY5MMtcbJFBkhXE6593XVR9UoGCH8jSFGci7jGvMGH5RYd5PBJW+00NZQt6gf7CbagJCrhg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1073,6 +1094,9 @@ packages:
 
   radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
+
+  rangetouch@2.0.1:
+    resolution: {integrity: sha512-sln+pNSc8NGaHoLzwNBssFSf/rSYkqeBXzX1AtJlkJiUaVSJSbRAWJk+4omsXkN+EJalzkZhWQ3th1m0FpR5xA==}
 
   readdirp@4.1.2:
     resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
@@ -1333,6 +1357,9 @@ packages:
         optional: true
       uploadthing:
         optional: true
+
+  url-polyfill@1.1.13:
+    resolution: {integrity: sha512-tXzkojrv2SujumYthZ/WjF7jaSfNhSXlYMpE5AYdL2I3D7DCeo+mch8KtW2rUuKjDg+3VXODXHVgipt8yGY/eQ==}
 
   vfile-location@5.0.3:
     resolution: {integrity: sha512-5yXvWDEgqeiYiBe1lbxYF7UMAIm/IcopxMHrMQDq3nvKcjPKIhZklUKL+AE7J7uApI4kwe2snsK+eI6UTj9EHg==}
@@ -1838,6 +1865,11 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
+  astro-plyr@1.1.0(astro@5.9.3(@types/node@24.0.1)(rollup@4.43.0)(typescript@5.8.3))(plyr@3.7.8):
+    dependencies:
+      astro: 5.9.3(@types/node@24.0.1)(rollup@4.43.0)(typescript@5.8.3)
+      plyr: 3.7.8
+
   astro@5.9.3(@types/node@24.0.1)(rollup@4.43.0)(typescript@5.8.3):
     dependencies:
       '@astrojs/compiler': 2.12.2
@@ -2015,6 +2047,8 @@ snapshots:
 
   cookie@1.0.2: {}
 
+  core-js@3.43.0: {}
+
   cross-fetch@3.2.0:
     dependencies:
       node-fetch: 2.7.0
@@ -2031,6 +2065,8 @@ snapshots:
       source-map-js: 1.2.1
 
   cssesc@3.0.0: {}
+
+  custom-event-polyfill@1.0.7: {}
 
   debug@4.4.1:
     dependencies:
@@ -2280,6 +2316,8 @@ snapshots:
   kleur@3.0.3: {}
 
   kleur@4.1.5: {}
+
+  loadjs@4.3.0: {}
 
   longest-streak@3.1.0: {}
 
@@ -2682,6 +2720,14 @@ snapshots:
 
   picomatch@4.0.2: {}
 
+  plyr@3.7.8:
+    dependencies:
+      core-js: 3.43.0
+      custom-event-polyfill: 1.0.7
+      loadjs: 4.3.0
+      rangetouch: 2.0.1
+      url-polyfill: 1.1.13
+
   postcss@8.5.5:
     dependencies:
       nanoid: 3.3.11
@@ -2700,6 +2746,8 @@ snapshots:
   property-information@7.1.0: {}
 
   radix3@1.1.2: {}
+
+  rangetouch@2.0.1: {}
 
   readdirp@4.1.2: {}
 
@@ -3020,6 +3068,8 @@ snapshots:
       node-fetch-native: 1.6.6
       ofetch: 1.4.1
       ufo: 1.6.1
+
+  url-polyfill@1.1.13: {}
 
   vfile-location@5.0.3:
     dependencies:

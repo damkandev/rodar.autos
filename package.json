@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.9.3"
+    "astro": "^5.9.3",
+    "astro-plyr": "^1.1.0"
   }
 }
